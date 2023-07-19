@@ -19,7 +19,7 @@ app.get("/goals/main", async (req, res) => {
         res.status(200).json(data.rows)
     } catch (error) {
 
-        res.status(500).json(error)
+        res.status(500).json(error.message)
         
     }
 })
@@ -30,7 +30,7 @@ app.get("/goals/sub", async (req, res) => {
         res.status(200).json(data.rows)
     } catch (error) {
 
-        res.status(500).json(error)
+        res.status(500).json(error.message)
         
     }
 })
@@ -42,7 +42,7 @@ app.get("/goals/main/:id", async (req, res) => {
         res.status(200).json(data.rows)
     } catch (error) {
 
-        res.status(500).json(error)
+        res.status(500).json(error.message)
         
     }
 })
@@ -54,7 +54,7 @@ app.get("/goals/sub/:id", async (req, res) => {
         res.status(200).json(data.rows)
     } catch (error) {
 
-        res.status(500).json(error)
+        res.status(500).json(error.message)
         
     }
 })
@@ -66,7 +66,7 @@ app.get("/goals/sub/parent/:id", async (req, res) => {
         res.status(200).json(data.rows)
     } catch (error) {
 
-        res.status(500).json(error)
+        res.status(500).json(error.message)
         
     }
 })
@@ -78,7 +78,7 @@ app.delete("/goals/main/:id", async (req, res) => {
         res.status(200).json(data.rows)
     } catch (error) {
 
-        res.status(500).json(error)
+        res.status(500).json(error.message)
         
     }
 })
@@ -90,7 +90,7 @@ app.delete("/goals/sub/:id", async (req, res) => {
         res.status(200).json(data.rows)
     } catch (error) {
 
-        res.status(500).json(error)
+        res.status(500).json(error.message)
         
     }
 })
@@ -115,7 +115,7 @@ app.post("/goals/sub", async (req, res) => {
         res.status(200).json(data.rows)
     } catch (error) {
 
-        res.status(500).json(error)
+        res.status(500).json(error.message)
         
     }
 })
@@ -165,7 +165,7 @@ app.post("/goals/sub/:id", async (req, res) => {
         res.status(200).json(data.rows)
     } catch (error) {
 
-        res.status(500).json(error)
+        res.status(500).json(error.message)
         
     }
 })
