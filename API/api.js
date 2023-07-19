@@ -5,8 +5,8 @@ const path = require("path");
 dotenv.config();
 const app = express();
 app.use(express.json());
-app.use("/", express.static(path.join(__dirname, "../public/Front_END")));
-console.log(path.join(__dirname, "../public/Front_END"))
+app.use("/", express.static(path.join(__dirname, "../public/REACT_MVP/Front_END")));
+console.log(path.join(__dirname, "../public/REACT_MVP/public"))
 const PORT = process.env.PORT;
 const connectionString = process.env.DATABASE_URL;
 const pool = new Pool({
