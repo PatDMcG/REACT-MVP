@@ -1,0 +1,7 @@
+app.get("/goals", async (req, res) => {
+    try {
+        
+    } catch (error) {
+        
+    }
+})
